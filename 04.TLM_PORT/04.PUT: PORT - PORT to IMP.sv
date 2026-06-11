@@ -45,7 +45,7 @@ class generator extends uvm_component;
       `uvm_info("gen", $sformatf("at gen: data=%0d | addr=%0d", tr.data, tr.addr), UVM_NONE);
       #10;
     end
-    phase.raise_objection(this);
+    phase.drop_objection(this);
   endtask
 endclass
 
